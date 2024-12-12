@@ -49,4 +49,18 @@ for seq in sequences:
        T_dict[i] += 1
 
 
-print(A_dict)
+A_list = ['A:']
+C_list = ['C:']
+G_list = ['G:']
+T_list = ['T:']
+
+for index in A_dict:
+  A_list.append(A_dict[index])
+  C_list.append(C_dict[index])
+  G_list.append(G_dict[index])
+  T_list.append(T_dict[index])
+
+print(*A_list)
+print(*C_list)
+print(*G_list)
+print(*T_list)
